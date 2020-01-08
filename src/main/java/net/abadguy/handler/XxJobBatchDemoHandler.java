@@ -31,6 +31,7 @@ public class XxJobBatchDemoHandler {
 
     @XxlJob("batchJobDemo")
     public ReturnT<String> batchJobDemo(String param){
+        log.info("获取到的参数：[{}]",param);
         XxlJobLogger.log("作业调度开始。。。");
         log.info("开始。。。。。");
         try {
